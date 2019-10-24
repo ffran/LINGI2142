@@ -1,0 +1,11 @@
+ldconfig
+#!/bin/bash
+
+ip link set dev P10-eth0 up
+ip -6 addr add fde4:9:410::1010/64 dev P10-eth0
+ip link set dev P10-eth1 up
+ip -6 addr add fde4:9:510::1010/64 dev P10-eth1
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p10.api -i /tmp/p10_zebra.pid &
+# launching FRRouting OSPF daemon
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/p10_ospf.conf -z /tmp/p10.api -i /tmp/p10_ospf6d.pid -A 127.0.0.1
+
