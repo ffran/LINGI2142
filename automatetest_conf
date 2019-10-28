@@ -48,8 +48,15 @@ function mk_topo {
     add_link P2 P9
     add_link P2 P5
     add_link P3 P4
+    add_link P4 P5
+    add_link P4 P6
+    add_link P5 P6
+    add_link P4 P7
+    add_link P6 P8
+    add_link P7 P8
+    add_link P9 P10
+    add_link P9 P11
+    add_link P10 P11
+    add_link P4 P9
+    add_link P5 P10
 }
-
-
-
-
