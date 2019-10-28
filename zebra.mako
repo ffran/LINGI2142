@@ -13,7 +13,7 @@ interface lo
 !
 %for interface in data['interfaces']:
 interface ${data['hostname']}-${interface['name']}
-	description Link to ${data['hostname']}
+	description Link to ${interface['destinationR']}
 %endfor
 
 

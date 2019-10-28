@@ -30,7 +30,8 @@ def main():
 				d['hello_time'] = 40
 				d['dead_time'] = 40
 				d['instance_id'] = 0
-				d['adress'] = "fde0:"+"9:"+str(r[1])+str(link[2])+"::"+str(r[1])+str(r[1])+"/64"
+				d['destinationR'] = link[0]
+				d['adress'] = "fde4:"+"9:"+str(r[1])+str(link[2])+"::"+str(r[1])+str(r[1])+"/64"
 				d['area'] = "0.0.0.0"
 				d['active'] = "true"
 				x["interfaces"].append(copy.deepcopy(d))
@@ -39,10 +40,11 @@ def main():
 				d = {}
 				d['name'] = "eth"+str(count)
 				d['cost'] = 5
+				d['destinationR'] = link[0]
 				d['hello_time'] = 40
 				d['dead_time'] = 40
 				d['instance_id'] = 0
-				d['adress'] = "fde0:"+"9:"+str(link[3])+str(r[1])+"::"+str(r[1])+str(r[1])+"/64"
+				d['adress'] = "fde4:"+"9:"+str(link[3])+str(r[1])+"::"+str(r[1])+str(r[1])+"/64"
 				d['area'] = "0.0.0.0"
 				d['active'] = "true"
 				x["interfaces"].append(d)
@@ -54,22 +56,22 @@ def main():
 		template = Template(filename="ospf6d.mako")
 		with open(("P"+str(r[1])+"_ospf.conf"),'w+') as f:
 			f.write(template.render(data=data))
-		shutil.move("P"+str(r[1])+"_ospf.conf","automatetest.cfg/"+r[0])
+		shutil.move("P"+str(r[1])+"_ospf.conf","automatetest_cfg/"+r[0])
 		#ZEBRA FILE
 		template = Template(filename="zebra.mako")
 		with open(("P"+str(r[1])+"_zebra.conf"),'w+') as f:
 			f.write(template.render(data=data))
-		shutil.move("P"+str(r[1])+"_zebra.conf","automatetest.cfg/"+r[0])
+		shutil.move("P"+str(r[1])+"_zebra.conf","automatetest_cfg/"+r[0])
 		#START FILE
 		template = Template(filename="boot.mako")
 		with open(("P"+str(r[1])+"_boot"),'w+') as f:
 			f.write(template.render(data=data))
 			os.chmod(("P"+str(r[1])+"_boot"), 777)
-			shutil.move("P"+str(r[1])+"_boot","automatetest.cfg/")
+			shutil.move("P"+str(r[1])+"_boot","automatetest_cfg/")
 		template = Template(filename = "start.mako")
 		with open(("P"+str(r[1])+"_start"),'w+') as f:
 			f.write(template.render(data=data))
 			os.chmod(("P"+str(r[1])+"_start"), 777)
-			shutil.move("P"+str(r[1])+"_start","automatetest.cfg/")
+			shutil.move("P"+str(r[1])+"_start","automatetest_cfg/")
 main()
  

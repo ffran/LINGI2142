@@ -21,7 +21,7 @@ interface ${data['hostname']}-${interface['name']}
 !
 %endfor
 router ospf6
-    router-id ${data['router_id']}
+    ospf6 router-id ${data['router_id']}
     %for nic in data['interfaces']:
     interface ${data['hostname']}-${nic['name']} area ${nic['area']}
     %endfor
