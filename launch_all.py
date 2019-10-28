@@ -11,8 +11,8 @@ import shutil
 #TODO : gérer les cas ou le numero du routeur est > 10 (passage en hexadecimal) + automatiser create_network
 def main():
 	#os.mkdir("automatetest.cfg")
-	router = [("P1",1),("P2",2),("P3",3)]
-	links = [("P1", "P2", 2, 1), ("P2", "P3", 3, 2), ("P1", "P3", 3, 1)]#3rd parametrer = id du premier routeur, 4rd = id du deuxieme
+	router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7", 7),("P8",8),("P9",9),("P10",10),("P11",11)]
+	links = [("P1", "P2", 2, 1), ("P1", "P3", 3, 1), ("P2", "P3", 3, 2), ("P2", "P9", 9, 2), ("P4", "P9", 9, 4), ("P9", "P11", 11, 9),("P9", "P10", 10, 9), ("P2", "P5", 5, 2), ("P10", "P11", 11, 10), ("P5", "P10", 10, 5), ("P3", "P4", 4, 3),("P4", "P5", 5, 4),("P4", "P6", 6, 4), ("P5", "P6", 6, 5), , ("P4", "P7", 7, 4), ("P6", "P8", 8, 6), ("P7", "P8", 8, 7)]#3rd parametrer = id du premier routeur, 4rd = id du deuxieme
 	for r in router:
 		x = {
   			"name": "Swanky",
