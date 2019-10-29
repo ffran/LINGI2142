@@ -1,0 +1,1 @@
+{"interfaces": [{"adress": "fde0:9:12::22/64", "cost": 5, "name": "eth0", "area": "0.0.0.0", "instance_id": 0, "hello_time": 40, "active": "true"}, {"adress": "fde0:9:23::22/64", "cost": 5, "name": "eth1", "area": "0.0.0.0", "instance_id": 0, "hello_time": 40, "active": "true"}], "router_id": "0.251.23.2", "name": "Swanky", "hostname": "R2", "passwd": "zebra"}

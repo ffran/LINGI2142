@@ -8,7 +8,7 @@ ip -6 addr add ${link['adress']} dev ${data['hostname']}-${link['name']}
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
-LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/${data['hostname']}.api -i /tmp/${data['hostname']}_zebra.pid &
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/${data['hostname2']}.api -i /tmp/${data['hostname2']}_zebra.pid &
 # launching FRRouting OSPF daemon
-LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/${data['hostname']}_ospf.conf -z /tmp/${data['hostname']}.api -i /tmp/${data['hostname']}_ospf6d.pid -A 127.0.0.1
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/${data['hostname2']}_ospf.conf -z /tmp/${data['hostname2']}.api -i /tmp/${data['hostname2']}_ospf6d.pid -A 127.0.0.1
 
