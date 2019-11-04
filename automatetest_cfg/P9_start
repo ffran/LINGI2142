@@ -1,5 +1,7 @@
 ldconfig
 #!/bin/bash
+ip link set dev lo up
+ip -6 addr add fde4:9::99/128 dev lo
 
 ip link set dev P9-eth0 up
 ip -6 addr add fde4:9:910::99/64 dev P9-eth0
