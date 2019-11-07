@@ -12,7 +12,7 @@ ip -6 addr add fde4:9:34::33/64 dev P3-eth2
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
-LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p3.api -i /tmp/p3_zebra.pid &
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p3.api -i /tmp/p3_zebra.pid --v6-rr-semantics &
 # launching FRRouting OSPF daemon
 LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/p3_ospf.conf -z /tmp/p3.api -i /tmp/p3_ospf6d.pid -A 127.0.0.1 &
 LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/bgpd -f /etc/p3_bgp.conf -z /tmp/p3.api -i /tmp/p3_bgpd.pid -A 127.0.0.1
