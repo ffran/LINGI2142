@@ -29,10 +29,11 @@ neighbor fde4::1 activate
 neighbor fde4:9::11 activate
 neighbor fde4:9::11 next-hop-self
 
-neighbor fde4:9::1010 activate
-neighbor fde4:9::1010 next-hop-self
-
 neighbor fde4:9::99 activate
 neighbor fde4:9::99 next-hop-self
+
+neighbor fde4:9::1010 activate
+neigbhor fde4:0::1010 next-exit
+
 
 exit-address-family
