@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#flush older table
+
+ip6tables -F INPUT
+ip6tables -F OUTPUT
+ip6tables -F FORWARD
+
+#drop by default if no rules 
+ip6tables -P INPUT DROP
+ip6tables -P FORWARD DROP
+ip6tables -P OUTPUT DROP
+
+#allow local
+ip6tables -A INPUT -i lo -j ACCEPT
+ip6tables -A OUTPUT -o lo -j ACCEPT
+
+#allow OSPF (number protocol = 89)
+ip6tables -A INPUT -p 89 -j ACCEPT
+ip6tables -A OUTPUT -p 89 -j ACCEPT
+ip6tables -A FORWARD -p 89 -j ACCEPT
+
+#allow BGP
+
+iptables -A INPUT -p tcp -s neighbor_ip --dport 179 -i neighbor_interface -j ACCEPT
+iptables -A INPUT -p tcp -s neighb
