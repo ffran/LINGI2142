@@ -9,6 +9,8 @@ ip link set dev P4-eth1 up
 ip -6 addr add fde4:9:34::44/64 dev P4-eth1
 ip link set dev P4-eth2 up
 ip -6 addr add fde4:9:49::44/64 dev P4-eth2
+#firewall
+#firewall/P4.sh
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
