@@ -4,10 +4,10 @@ ip link set dev lo up
 ip -6 addr add fde4:9::1111/128 dev lo
 
 ip link set dev P11-eth0 up
-ip -6 addr add fde4:9:1011::1111/64 dev P11-eth0
+ip -6 addr add fde4:9:0000:1011::1111/64 dev P11-eth0
 
 ip link set dev P11-eth1 up
-ip -6 addr add fde4:9:911::1111/64 dev P11-eth1
+ip -6 addr add fde4:9:0000:911::1111/64 dev P11-eth1
 
 ip link set dev king up
 ip -6 addr add fde4::9:cafe/64 dev king

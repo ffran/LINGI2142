@@ -19,6 +19,7 @@ def main():
 		x = {
   			"name": "Swanky",
   			"hostname": r[0],
+			"id": r[1],
 			"hostname2": r[0].lower(),
   			"passwd": "zebra",
 			"router_id": "42.251.23." + str(r[1]),
@@ -34,7 +35,7 @@ def main():
 				d['dead_time'] = 40
 				d['instance_id'] = 0
 				d['destinationR'] = link[1]
-				d['adress'] = "fde4:"+"9:"+str(r[1])+str(link[2])+"::"+str(r[1])+str(r[1])+"/64"
+				d['adress'] = "fde4:"+"9:0000"+str(r[1])+str(link[2])+"::"+str(r[1])+str(r[1])+"/64"
 				d['area'] = "0.0.0.0"
 				d['active'] = "true"
 				x["interfaces"].append(copy.deepcopy(d))
@@ -47,7 +48,7 @@ def main():
 				d['hello_time'] = 10
 				d['dead_time'] = 40
 				d['instance_id'] = 0
-				d['adress'] = "fde4:"+"9:"+str(link[3])+str(r[1])+"::"+str(r[1])+str(r[1])+"/64"
+				d['adress'] = "fde4:"+"9:0000"+str(link[3])+str(r[1])+"::"+str(r[1])+str(r[1])+"/64"
 				d['area'] = "0.0.0.0"
 				d['active'] = "true"
 				x["interfaces"].append(d)
