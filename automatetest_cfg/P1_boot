@@ -4,4 +4,5 @@ echo "P1 has booted"
 
 sysctl -w net.ipv6.conf.all.forwarding=1
 sysctl -w net.ipv6.conf.default.forwarding=1
+LD_LIBRARY_PATH=/usr/local/lib  vtysh  
 

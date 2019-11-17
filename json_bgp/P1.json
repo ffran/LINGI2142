@@ -1,0 +1,38 @@
+{
+    "name": "P1",
+    "hostname": "bgpd",
+    "passwd": "zebra",
+    "router_id": "10.10.10.1",
+    "router_lo":"fde4:9::11",
+    "router_as" : "65009",
+    "cluster_id": "1.1.1.1",
+    "neighbors": [
+      {
+        "remote_as": "65009",
+        "interface": "fde4:9::1111",
+        "MD5_pass": "pass9",
+        "reflector": false
+      },
+      {
+        "remote_as": "65009",
+        "interface": "fde4:9::99",
+        "MD5_pass": "pass9",
+        "reflector": false
+      },
+      {
+        "remote_as": "65009",
+        "interface": "fde4:9::22",
+        "MD5_pass": "pass9",
+        "reflector": true
+      },
+      {
+        "remote_as": "65009",
+        "interface": "fde4:9::33",
+        "MD5_pass": "pass9",
+        "reflector": true
+      }
+
+
+
+    ]
+  }
