@@ -1,29 +1,36 @@
 !
-hostname bgpd
-password zebra
+! BGP configuration for ${data['name']}
+!
+hostname ${data['hostname']}
+password ${data['passwd']}
 log stdout
 !
-router bgp 65009
-bgp router-id ${data['id']}.${data['id']}.${data['id']}.${data['id']}
+router bgp ${data['router_as']}
+bgp router ${data['router_id']}
 no bgp default ipv4-unicast
+!
+%for neighbor in data['neighbors']:
+neighbor ${neighbor['interface']} ${neighbor['remote_as']}
+neighbor ${neighbor['interface']} interface ${data['router_lo']}
+neighbor ${neighbor['interface']} update-source lo
+%if neighbor['remote_as']==data['router_as']:
+neighbor ${neighbor['interface']} password pass9
+%endif
 
-bgp cluster-id X.X.X.X
+%endfor
+bgp cluster-id ${data['cluster_id']}
 !
 address-family ipv6 unicast
+!
 network fde4:9::/32
-neighbor fde4:9::11 activate
-neighbor fde4:9::11 next-hop-self
+!
+%for neighbor in data['neighbors']:
+neighbor ${neighbor['interface']} activate
+neighbor ${neighbor['interface']} next-hop-self
+%if neighbor['reflector']:
+neighbor ${neighbor['interface']} route-reflector-client
+%endif
 
-neighbor fde4:9::22 activate
-neighbor fde4:9::22 next-hop-self
-
-neighbor fde4:9::33 activate
-neighbor fde4:9::33 next-hop-self
-
-neighbor fde4:9::44 activate
-neighbor fde4:9::44 next-hop-self
-neighbor fde4:9::44 route-reflector-client
-
-neighbor fde4:9::55 activate
-
-exit-adress-family
+%endfor
+exit-address-family
+!
