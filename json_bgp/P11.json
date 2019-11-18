@@ -1,44 +1,43 @@
 {
-    "name": "P1",
+    "name": "P11",
     "hostname": "bgpd",
     "passwd": "zebra",
-    "bgp_router_id": "10.10.10.1",
-    "loopback_adress":"fde4:9::11",
+    "bgp_router_id": "42.251.23.11",
+    "loopback_adress":"fde4:9::22",
     "router_as" : "65009",
     "cluster_id": "1.1.1.1",
     "neighbors": [
       {
-        "interface": "fde4:9::1111",
+        "interface": "fde4:9::11",
         "MD5_pass": "pass9",
-        "reflector": false,
+        "reflector": true,
         "access-list_in":" ",
         "access-list_out":" "
       },
       {
-        "interface": "fde4:9::99",
+        "interface": "fde4:9::44",
         "MD5_pass": "pass9",
-        "reflector": false,
-        "access-list_in":"filter",
+        "reflector": true,
+        "access-list_in":" ",
         "access-list_out":" "
       },
       {
-        "interface": "fde4:9::22",
+        "interface": "fde4:9::55",
         "MD5_pass": "pass9",
-        "reflector": true,
-        "access-list_in":"filter",
-        "access-list_out":"filter"
-      },
-      {
-        "interface": "fde4:9::33",
-        "MD5_pass": "pass9",
-        "reflector": true,
+        "reflector": false,
         "access-list_in":" ",
         "access-list_out":" "
       }
 
     ],
-
     "ebgp_neighbor" :[
+        {
+            "remote_as": "64512",
+            "interface":"fde4::1",
+            "our_interface" : "king",
+            "security_hop": 1
+
+        }
 
     ],
     "access-list" : [
@@ -49,4 +48,6 @@
 
       }
     ]
+
+
   }

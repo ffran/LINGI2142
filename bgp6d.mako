@@ -9,13 +9,20 @@ router bgp ${data['router_as']}
 bgp router ${data['bgp_router_id']}
 no bgp default ipv4-unicast
 !
+
+%for neighbor in data['ebgp_neighbor']:
+neighbor ${neighbor['interface']} remote-as ${neighbor['remote_as']}
+neighbor ${neighbor['interface']} interface ${neighbor['our_interface']}
+%if neighbor['security_hop']!=' ':
+neighbor ${neighbor['interface']} ttl-security hops ${neighbor['security_hop']}
+%endif
+%endfor
+
 %for neighbor in data['neighbors']:
-neighbor ${neighbor['interface']} ${neighbor['remote_as']}
+neighbor ${neighbor['interface']} remote-as ${data['router_as']}
 neighbor ${neighbor['interface']} interface ${data['loopback_adress']}
 neighbor ${neighbor['interface']} update-source lo
-%if neighbor['remote_as']==data['router_as']:
 neighbor ${neighbor['interface']} password pass9
-%endif
 %if neighbor['access-list_in']!=' ':
 neighbor ${neighbor['interface']} distribute-list ${neighbor['access-list_in']} in
 %endif
@@ -24,7 +31,10 @@ neighbor ${neighbor['interface']} distribute-list ${neighbor['access-list_out']}
 %endif
 
 %endfor
+
+%if data['cluster_id'] != ' ':
 bgp cluster-id ${data['cluster_id']}
+%endif
 !
 address-family ipv6 unicast
 !

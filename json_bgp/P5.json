@@ -1,0 +1,37 @@
+{
+    "name": "P5",
+    "hostname": "bgpd",
+    "passwd": "zebra",
+    "bgp_router_id": "10.10.10.5",
+    "loopback_adress":"fde4:9::55",
+    "router_as" : "65009",
+    "cluster_id": " ",
+    "neighbors": [
+      {
+        "interface": "fde4:9::22",
+        "MD5_pass": "pass9",
+        "reflector": false,
+        "access-list_in":" ",
+        "access-list_out":" "
+      },
+      {
+        "interface": "fde4:9::1010",
+        "MD5_pass": "pass9",
+        "reflector": false,
+        "access-list_in":" ",
+        "access-list_out":" "
+      }
+    ],
+  
+    "ebgp_neighbor" :[
+  
+    ],
+    "access-list" : [
+      {
+        "name": "filter",
+        "type": "permit",
+        "prefix" : "any"
+  
+      }
+    ]
+  }
