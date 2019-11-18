@@ -17,14 +17,14 @@
     {
       "interface": "fde4:9::44",
       "MD5_pass": "pass9",
-      "reflector": false,
+      "reflector": true,
       "access-list_in":" ",
       "access-list_out":" "
     },
     {
       "interface": "fde4:9::99",
       "MD5_pass": "pass9",
-      "reflector": true,
+      "reflector": false,
       "access-list_in":" ",
       "access-list_out":" "
     }

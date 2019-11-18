@@ -2,10 +2,10 @@
     "name": "P2",
     "hostname": "bgpd",
     "passwd": "zebra",
-    "bgp_router_id": "2.2.2.2",
+    "bgp_router_id": "10.10.10.2",
     "loopback_adress":"fde4:9::22",
     "router_as" : "65009",
-    "cluster_id": "10.10.10.2",
+    "cluster_id": "2.2.2.2",
     "neighbors": [
       {
         "remote_as": "65009",
@@ -19,7 +19,7 @@
         "remote_as": "65009",
         "interface": "fde4:9::11",
         "MD5_pass": "pass9",
-        "reflector": true,
+        "reflector": false,
         "access-list_in":" ",
         "access-list_out":" "
       },
@@ -35,7 +35,7 @@
         "remote_as": "65009",
         "interface": "fde4:9::55",
         "MD5_pass": "pass9",
-        "reflector": false,
+        "reflector": true,
         "access-list_in":" ",
         "access-list_out":" "
       }

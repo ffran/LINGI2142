@@ -11,15 +11,15 @@
         "interface": "fde4:9::22",
         "MD5_pass": "pass9",
         "reflector": false,
-        "access-list_in":" ",
-        "access-list_out":" "
+        "access-list_in":"filter",
+        "access-list_out":"filter"
       },
       {
         "interface": "fde4:9::33",
         "MD5_pass": "pass9",
         "reflector": false,
-        "access-list_in":" ",
-        "access-list_out":" "
+        "access-list_in":"filter",
+        "access-list_out":"filter"
       }
   
     ],
