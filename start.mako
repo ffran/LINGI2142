@@ -1,10 +1,16 @@
 ldconfig
 #!/bin/bash
 
+
+ip link set dev lo up
+ip -6 addr add ${data['loopback_adress']} dev lo
+
 %for link in data['interfaces']:
 ip link set dev ${data['hostname']}-${link['name']} up
 ip -6 addr add ${link['adress']} dev ${data['hostname']}-${link['name']}
 %endfor 
+
+
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table

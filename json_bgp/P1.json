@@ -2,7 +2,7 @@
     "name": "P1",
     "hostname": "bgpd",
     "passwd": "zebra",
-    "router_id": "10.10.10.1",
+    "bgp_router_id": "10.10.10.1",
     "router_lo":"fde4:9::11",
     "router_as" : "65009",
     "cluster_id": "1.1.1.1",
