@@ -1,38 +1,54 @@
 {
-    "name": "P1",
+    "name": "P2",
     "hostname": "bgpd",
     "passwd": "zebra",
-    "router_id": "10.10.10.1",
-    "router_lo":"fde4:9::11",
+    "bgp_router_id": "2.2.2.2",
+    "loopback_adress":"fde4:9::22",
     "router_as" : "65009",
-    "cluster_id": "1.1.1.1",
+    "cluster_id": "10.10.10.2",
     "neighbors": [
-      {
-        "remote_as": "65010",
-        "interface": "fde4:9::1111",
-        "MD5_pass": "pass9",
-        "reflector": true
-      },
       {
         "remote_as": "65009",
         "interface": "fde4:9::99",
         "MD5_pass": "pass9",
-        "reflector": false
+        "reflector": false,
+        "access-list_in":" ",
+        "access-list_out":" "
       },
       {
         "remote_as": "65009",
-        "interface": "fde4:9::22",
+        "interface": "fde4:9::11",
         "MD5_pass": "pass9",
-        "reflector": true
+        "reflector": true,
+        "access-list_in":" ",
+        "access-list_out":" "
       },
       {
         "remote_as": "65009",
-        "interface": "fde4:9::33",
+        "interface": "fde4:9::44",
         "MD5_pass": "pass9",
-        "reflector": true
+        "reflector": true,
+        "access-list_in":" ",
+        "access-list_out":" "
+      },
+      {
+        "remote_as": "65009",
+        "interface": "fde4:9::55",
+        "MD5_pass": "pass9",
+        "reflector": false,
+        "access-list_in":" ",
+        "access-list_out":" "
       }
 
+    ],
+    "access-list" : [
+      {
+        "name": "filter",
+        "type": "permit",
+        "prefix" : "any"
 
-
+      }
     ]
+
+
   }

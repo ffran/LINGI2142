@@ -6,7 +6,7 @@ password ${data['passwd']}
 log stdout
 !
 router bgp ${data['router_as']}
-bgp router ${data['router_id']}
+bgp router ${data['bgp_router_id']}
 no bgp default ipv4-unicast
 !
 %for neighbor in data['neighbors']:
@@ -15,6 +15,12 @@ neighbor ${neighbor['interface']} interface ${data['loopback_adress']}
 neighbor ${neighbor['interface']} update-source lo
 %if neighbor['remote_as']==data['router_as']:
 neighbor ${neighbor['interface']} password pass9
+%endif
+%if neighbor['access-list_in']!=' ':
+neighbor ${neighbor['interface']} distribute-list ${neighbor['access-list_in']} in
+%endif
+%if neighbor['access-list_out']!=' ':
+neighbor ${neighbor['interface']} distribute-list ${neighbor['access-list_out']} out
 %endif
 
 %endfor
@@ -34,3 +40,7 @@ neighbor ${neighbor['interface']} route-reflector-client
 %endfor
 exit-address-family
 !
+
+%for access in data['access-list']:
+ipv6 access-list ${access['name']} ${access['type']} ${access['prefix']}
+%endfor

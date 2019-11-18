@@ -1,11 +1,14 @@
 ldconfig
 #!/bin/bash
 
+
+ip link set dev lo up
+ip -6 addr add fde4:9::11/128 dev lo
+
 ip link set dev P1-eth0 up
-ip -6 addr add fde4:9:12::11/64 dev P1-eth0 
-# Add a default route on the host towards the nearest router
-ip link set dev P1-eth1 up
-ip -6 addr add fde4:9:13::11/64 dev P1-eth1
+ip -6 addr add fde4:9:000013::11/64 dev P1-eth0
+
+
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
