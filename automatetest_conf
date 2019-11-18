@@ -56,7 +56,8 @@ function mk_topo {
      add_link P2 P5
 
      bridge_node P11 eth3 king
-     bridge_node P10 eth3 king2 
+     bridge_node P10 eth3 king2
      bridge_node P3 eth3 king3
+     bridge_node P1 eth3 king4
 
 }
