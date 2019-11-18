@@ -40,6 +40,10 @@ address-family ipv6 unicast
 !
 network fde4:9::/32
 !
+%for neighbor in data['ebgp_neighbor']:
+neighbor ${neighbor['interface']} activate
+%endfor
+
 %for neighbor in data['neighbors']:
 neighbor ${neighbor['interface']} activate
 neighbor ${neighbor['interface']} next-hop-self
