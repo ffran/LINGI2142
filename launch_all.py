@@ -11,11 +11,18 @@ import shutil
 #TODO : gérer les cas ou le numero du routeur est > 10 (passage en hexadecimal) + automatiser create_network
 def main():
 	#router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7", 7),("P8",8),("P9",9)]
-	router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7",7),("P8",8),("P9",9),("P10",10)]
-	bgpLinks = [("P1", "P2", 2, 1),("P2", "P3", 3, 2)]
-	links = [("P1","P3",3,1),("P2","P8",8,2),("P2","P9",9,2),("P2","P4",4,2),("P3","P5",5,3),("P3","P7",7,3),("P4","P8",8,4),("P4","P6",6,4),("P4","P10",10,4),("P5","P6",6,5),("P5","P7",7,5),("P5","P10",10,5),("P3","P9",9,3)]
+	router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7",7),("P8",8),("P9",9),("P10",10),("P11",11)]
+	bgpLinks = [("P1", "P2", 2, 1),("P2", "P3", 3, 2),("P1","P9",9,1),("P1","P11",11,1),("P9","P11",11,9),("P1","P3",3,1),("P3","P9",9,3),("P9","P10",10,9),("P10","P11",11,10),("P3","P4",4,3),("P4","P10",10,4),("P2","P5",5,2),("P5","P10",10,5)]
+	cluster1 = ["P1","P11","P9"]
+	cluster2 = ["P10","P3","P2"] 
+	links = [("P1","P3",3,1),("P1","P2",2,1),("P2","P3",3,2),("P3","P4",4,3),("P4","P5",5,4),("P2","P5",5,2),("P2","P9",9,2),("P4","P10",10,4),("P9","P10",10,9),("P5","P10",10,5),("P10","P11",11,10),]
 	#links = [("P1", "P2", 2, 1), ("P1", "P6", 6, 1), ("P2", "P3", 3, 2), ("P2", "P7", 7, 2), ("P3", "P4", 4, 3), ("P3", "P8", 8, 3),("P4", "P5", 5, 4), ("P4", "P9", 9, 4),("P6","P7",7,6),("P7","P8", 8, 7), ("P8","P9",9,8)]#3rd parametrer = id du premier routeur, 4rd = id du deuxieme
 	for r in router:
+		Cluster_id = None
+		if r in cluster1:
+			Cluster_id = "1.1.1.1"
+		elif r in cluster2:
+			Cluster_id = "2.2.2.2"
 		x = {
   			"name": "Swanky",
   			"hostname": r[0],
@@ -27,7 +34,7 @@ def main():
 			"interfaces": [],
 			"neighbors": [],
 			"router_as" : "65009",
-			"cluster_id" : "1.1.1.1"
+			"cluster_id" : Cluster_id
     		}
 		count = 0
 		for link in links:
@@ -102,10 +109,12 @@ def main():
 			shutil.move("P"+str(r[1])+"_start","our_network_cfg/")
 		print(len(x['neighbors']))
 		print(x['neighbors'])
-		template = Template(filename = "bgp.mako")
-		if (len(x['neighbors']) != 0):
-			with open(("p"+str(r[1])+"_bgp.conf"),'w+') as f:
-                        	f.write(template.render(data=data))
-			shutil.move("p"+str(r[1])+"_bgp.conf","our_network_cfg/"+r[0])
+		#template = Template(filename = "bgp.mako")
+		#if (len(x['neighbors']) != 0):
+		#	with open(("p"+str(r[1])+"_bgp.conf"),'w+') as f:
+                #       	f.write(template.render(data=data))
+		#	shutil.move("p"+str(r[1])+"_bgp.conf","our_network_cfg/"+r[0])
+		with open(("P"+str(r[1])+".json"),'w') as f:
+			json.dumps(data,f)
 main()
  
