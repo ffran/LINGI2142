@@ -35,7 +35,7 @@
 
     {
       "remote_as": "65001",
-      "interface":"fde4::1:face",
+      "interface":"fde4:9::1:face",
       "our_interface" : "king3",
       "security_hop": " "
 
