@@ -1,5 +1,5 @@
 #!/bin/bash
-firewall for router P5-Firewall
+firewall for router P10-Firewall
 #flush older table
 ip6tables -F INPUT
 ip6tables -F OUTPUT
