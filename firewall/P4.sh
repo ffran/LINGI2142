@@ -35,6 +35,8 @@ ip6tables -I OUTPUT -p udp --dport 33434:33474 -j ACCEPT
 #allow BGP
 ip6tables -A INPUT -p tcp --dport 179 -j ACCEPT
 ip6tables -A INPUT -p tcp --sport 179 -j ACCEPT
+ip6tables -A FORWARD -p tcp --dport 179 -j ACCEPT
+ip6tables -A FORWARD -p tcp --sport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --sport 179 -j ACCEPT
 
@@ -46,3 +48,4 @@ ip6tables -A OUTPUT -p tcp --sport 179 -j ACCEPT
 #ip6tables -A OUTPUT -j LOGGING0
 #ip6tables -A LOGGING -m limit --limit 2/min -j LOG --log-prefix "IPTables-Dropped: " --log-level 4
 #ip6tables -A LOGGING -j DROP
+# Log the dropped packets
