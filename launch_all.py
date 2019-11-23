@@ -8,21 +8,29 @@ import shutil
 
 
 
-#TODO : gérer les cas ou le numero du routeur est > 10 (passage en hexadecimal) + automatiser create_network
+#TODO : gerer les cas ou le numero du routeur est > 9 (passage en hexadecimal) + automatiser create_network
 def main():
-	#router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7", 7),("P8",8),("P9",9)]
-	router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7",7),("P8",8),("P9",9),("P10",10),("P11",11)]
+	router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7",7),("P8",8),("P9",9),("P10",10),("P11",11),("P91",91),("P92",92)]
 	bgpLinks = [("P1", "P2", 2, 1),("P2", "P3", 3, 2),("P1","P9",9,1),("P1","P11",11,1),("P9","P11",11,9),("P1","P3",3,1),("P3","P9",9,3),("P9","P10",10,9),("P10","P11",11,10),("P3","P4",4,3),("P4","P10",10,4),("P2","P5",5,2),("P5","P10",10,5)]
 	cluster1 = ["P1","P11","P9"]
 	cluster2 = ["P10","P3","P2"] 
-	links = [("P1","P3",3,1),("P1","P2",2,1),("P2","P3",3,2),("P3","P4",4,3),("P4","P5",5,4),("P2","P5",5,2),("P2","P9",9,2),("P4","P10",10,4),("P9","P10",10,9),("P5","P10",10,5),("P10","P11",11,10),]
-	#links = [("P1", "P2", 2, 1), ("P1", "P6", 6, 1), ("P2", "P3", 3, 2), ("P2", "P7", 7, 2), ("P3", "P4", 4, 3), ("P3", "P8", 8, 3),("P4", "P5", 5, 4), ("P4", "P9", 9, 4),("P6","P7",7,6),("P7","P8", 8, 7), ("P8","P9",9,8)]#3rd parametrer = id du premier routeur, 4rd = id du deuxieme
+	router_as_65099 = ["P91","P92"]
+	client_1111 = ["P91","P92"]
+	links = [("P1","P3",3,1),("P1","P2",2,1),("P2","P3",3,2),("P3","P4",4,3),("P4","P5",5,4),("P2","P5",5,2),("P2","P9",9,2),("P4","P10",10,4),("P9","P10",10,9),("P5","P10",10,5),("P10","P11",11,10),("P91","P92",92,91)]
 	for r in router:
 		Cluster_id = None
 		if r in cluster1:
 			Cluster_id = "1.1.1.1"
 		elif r in cluster2:
 			Cluster_id = "2.2.2.2"
+		if r in router_as_65099:
+			router_as = "65099"
+		else
+			router_as = "65009"
+		if r in client_1111:
+			subnet = "1111"
+		else
+			subnet = "0000"
 		x = {
   			"name": "Swanky",
   			"hostname": r[0],
@@ -33,7 +41,7 @@ def main():
 			"bgp_router_id": "10.10.10."+str(r[1]), 
 			"interfaces": [],
 			"neighbors": [],
-			"router_as" : "65009",
+			"router_as" : router_as,
 			"cluster_id" : Cluster_id
     		}
 		count = 0
@@ -46,7 +54,7 @@ def main():
 				d['dead_time'] = 40
 				d['instance_id'] = 0
 				d['destinationR'] = link[1]
-				d['adress'] = "fde4:"+"9:0000"+str(r[1])+str(link[2])+"::"+str(r[1])+str(r[1])+"/64"
+				d['adress'] = "fde4:"+"9:"+subnet+":"+str(r[1])+str(link[2])+"::"+str(r[1])+str(r[1])+"/64"
 				d['area'] = "0.0.0.0"
 				d['active'] = "true"
 				x["interfaces"].append(copy.deepcopy(d))
@@ -59,28 +67,28 @@ def main():
 				d['hello_time'] = 10
 				d['dead_time'] = 40
 				d['instance_id'] = 0
-				d['adress'] = "fde4:"+"9:0000"+str(link[3])+str(r[1])+"::"+str(r[1])+str(r[1])+"/64"
+				d['adress'] = "fde4:"+"9:"+subnet+":"+str(link[3])+str(r[1])+"::"+str(r[1])+str(r[1])+"/64"
 				d['area'] = "0.0.0.0"
 				d['active'] = "true"
 				x["interfaces"].append(d)
 				count += 1
 		x['cost'] = 5
 		x['hello_time'] = 10
-		x['loopback_adress'] = "fde4:9::"+str(r[1])+str(r[1])+"/128"
+		x['loopback_adress'] = "fde4:9:"+subnet+":"+str(r[1])+str(r[1])+"/128"
 		x['dead_time'] = 40
 		x['instance_id'] = 0
 		for bgp in bgpLinks:
 			if bgp[0] == r[0]:
 				d = {}
 				d['remote_as'] = "65009"
-				d['interface'] = "fde4:9::"+str(r[1])+str(r[1])
+				d['interface'] = "fde4:9:"+subnet+":"+str(r[1])+str(r[1])
 				d['MD5_pass'] = "pass9"
 				d['reflector'] = True
 				x['neighbors'].append(d)
 			if bgp[0] == r[1]:
 				d = {}
 				d['remote_as'] = "65009"
-				d['interface'] = "fde4:9::"+str(bgp[3])+str(bgp[3])
+				d['interface'] = "fde4:9:"+subnet+":"+str(bgp[3])+str(bgp[3])
 				d['MD5_pass'] = "pass9"
 				d['reflector'] = True
 				x['neighbors'].append(d)			

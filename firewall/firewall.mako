@@ -1,5 +1,5 @@
 #!/bin/bash
-firewall for router ${data['name']}
+#firewall for router ${data['name']}
 #flush older table
 ip6tables -F INPUT
 ip6tables -F OUTPUT

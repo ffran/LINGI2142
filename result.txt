@@ -1,0 +1,13 @@
+Valid connection from P3 to fde4:9::33
+Valid connection from P11 to fde4:9::1111
+Valid connection from P11 to fde4:9::22
+Valid connection from P11 to fde4:9::33
+Valid connection from P1 to fde4:9::1111
+Valid connection from P1 to fde4:9::22
+Valid connection from P1 to fde4:9::33
+Valid connection from P2 to fde4:9::1111
+Valid connection from P2 to fde4:9::22
+Valid connection from P2 to fde4:9::33
+Valid connection from P3 to fde4:9::1111
+Valid connection from P3 to fde4:9::22
+Valid connection from P3 to fde4:9::33
