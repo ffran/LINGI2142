@@ -3,7 +3,7 @@ ldconfig
 
 
 ip link set dev lo up
-ip -6 addr add fde4:9:0000:88/128 dev lo
+ip -6 addr add fde4:9:0000::88/128 dev lo
 
 
 
@@ -12,6 +12,6 @@ ip -6 addr add fde4:9:0000:88/128 dev lo
 # and the linux kernel routing table
 LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p8.api -i /tmp/p8_zebra.pid &
 # launching FRRouting OSPF daemon
-LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/p8_ospf.conf -z /tmp/p8.api -i /tmp/p8_ospf6d.pid -A 127.0.0.1
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/p8_ospf.conf -z /tmp/p8.api -i /tmp/p8_ospf6d.pid -A 127.0.0.1 &
 #bgp
 LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/bgpd -f /etc/p8_bgp.conf -z /tmp/p8.api -i /tmp/p8_bgpd.pid -A 127.0.0.1

@@ -16,18 +16,18 @@ def main():
 	cluster2 = ["P10","P3","P2"] 
 	router_as_65099 = ["P91","P92"]
 	client_1111 = ["P91","P92"]
-	links = [("P1","P3",3,1),("P1","P2",2,1),("P2","P3",3,2),("P3","P4",4,3),("P4","P5",5,4),("P2","P5",5,2),("P2","P9",9,2),("P4","P10",10,4),("P9","P10",10,9),("P5","P10",10,5),("P10","P11",11,10),("P91","P92",92,91)]
+	links = [("P1","P3",3,1),("P1","P2",2,1),("P2","P3",3,2),("P3","P4",4,3),("P4","P5",5,4),("P2","P5",5,2),("P2","P9",9,2),("P4","P9",9,4),("P4","P10",10,4),("P9","P10",10,9),("P9","P11",11,9),("P5","P10",10,5),("P10","P11",11,10),("P91","P92",92,91)]
 	for r in router:
 		Cluster_id = None
-		if r in cluster1:
+		if r[0] in cluster1:
 			Cluster_id = "1.1.1.1"
-		elif r in cluster2:
+		elif r[0] in cluster2:
 			Cluster_id = "2.2.2.2"
-		if r in router_as_65099:
+		if r[0] in router_as_65099:
 			router_as = "65099"
 		else:
 			router_as = "65009"
-		if r in client_1111:
+		if r[0] in client_1111:
 			subnet = "1111"
 		else:
 			subnet = "0000"
@@ -74,14 +74,14 @@ def main():
 				count += 1
 		x['cost'] = 5
 		x['hello_time'] = 10
-		x['loopback_adress'] = "fde4:9:"+subnet+":"+str(r[1])+str(r[1])+"/128"
+		x['loopback_adress'] = "fde4:9:"+subnet+"::"+str(r[1])+str(r[1])+"/128"
 		x['dead_time'] = 40
 		x['instance_id'] = 0
 		for bgp in bgpLinks:
 			if bgp[0] == r[0]:
 				d = {}
 				d['remote_as'] = "65009"
-				d['interface'] = "fde4:9:"+subnet+":"+str(r[1])+str(r[1])
+				d['interface'] = "fde4:9:"+subnet+"::"+str(r[1])+str(r[1])
 				d['MD5_pass'] = "pass9"
 				d['reflector'] = True
 				x['neighbors'].append(d)
