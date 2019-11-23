@@ -25,11 +25,11 @@ def main():
 			Cluster_id = "2.2.2.2"
 		if r in router_as_65099:
 			router_as = "65099"
-		else
+		else:
 			router_as = "65009"
 		if r in client_1111:
 			subnet = "1111"
-		else
+		else:
 			subnet = "0000"
 		x = {
   			"name": "Swanky",
@@ -98,23 +98,23 @@ def main():
 		template = Template(filename="ospf6d.mako")
 		with open(("p"+str(r[1])+"_ospf.conf"),'w+') as f:
 			f.write(template.render(data=data))
-		shutil.move("p"+str(r[1])+"_ospf.conf","our_network_cfg/"+r[0])
+		shutil.move("p"+str(r[1])+"_ospf.conf","automatetest_cfg/"+r[0])
 		#ZEBRA FILE
 		template = Template(filename="zebra.mako")
 		with open(("p"+str(r[1])+"_zebra.conf"),'w+') as f:
 			f.write(template.render(data=data))
-		shutil.move("p"+str(r[1])+"_zebra.conf","our_network_cfg/"+r[0])
+		shutil.move("p"+str(r[1])+"_zebra.conf","automatetest_cfg/"+r[0])
 		#START FILE
 		template = Template(filename="boot.mako")
 		with open(("P"+str(r[1])+"_boot"),'w+') as f:
 			f.write(template.render(data=data))
 			os.chmod(("P"+str(r[1])+"_boot"), 777)
-			shutil.move("P"+str(r[1])+"_boot","our_network_cfg/")
+			shutil.move("P"+str(r[1])+"_boot","automatetest_cfg/")
 		template = Template(filename = "start.mako")
 		with open(("P"+str(r[1])+"_start"),'w+') as f:
 			f.write(template.render(data=data))
 			os.chmod(("P"+str(r[1])+"_start"), 777)
-			shutil.move("P"+str(r[1])+"_start","our_network_cfg/")
+			shutil.move("P"+str(r[1])+"_start","automatetest_cfg/")
 		print(len(x['neighbors']))
 		print(x['neighbors'])
 		#template = Template(filename = "bgp.mako")

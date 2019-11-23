@@ -7,8 +7,6 @@ from mako.template import Template
 import shutil
 
 
-
-#TODO : gérer les cas ou le numero du routeur est > 10 (passage en hexadecimal) + automatiser create_network
 def main():			
 		data = []
 		with open("essai.txt",'r') as f, open('showjson', 'w+') as b:
@@ -34,11 +32,12 @@ def main():
 		with open("Rapport_Test_BGP.txt", "w+") as a:
 			for d in data:
 				d=d["ipv6Unicast"]
-				for peers in d['peers']:
-					print(peers)
-					if peers['connectionsEstablished'] == 1:
-						a.write("Connection BGP établie du router : "+str(d["routerId"]) + "à l'adresse ")
+				d2 = d['peers']
+				for peers in d2:
+					d3 = d2[peers]
+					if d3['connectionsEstablished'] == 1:
+						a.write("Connection BGP établie du router : "+str(d["routerId"]) + " à l'adresse "+str(peers)+"\n")
 					else:
-						a.write("Connection BGP non établie du router : "+str(d["routerId"]) + "à l'adresse ")   
+						a.write("Connection BGP non établie du router : "+str(d["routerId"]) + " à l'adresse "+str(peers)+"\n")   
 main()
  

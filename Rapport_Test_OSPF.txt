@@ -1,0 +1,120 @@
+No connection from P11 to fde4:9::1111
+Traceroute6 result from P11 to fde4:9::1111 :
+No connection from P11 to fde4:9::22
+Traceroute6 result from P11 to fde4:9::22 :
+No connection from P11 to fde4:9::33
+Traceroute6 result from P11 to fde4:9::33 :
+No connection from P1 to fde4:9::1111
+Traceroute6 result from P1 to fde4:9::1111 :
+No connection from P1 to fde4:9::22
+Traceroute6 result from P1 to fde4:9::22 :
+No connection from P1 to fde4:9::33
+Traceroute6 result from P1 to fde4:9::33 :
+No connection from P2 to fde4:9::1111
+Traceroute6 result from P2 to fde4:9::1111 :
+No connection from P2 to fde4:9::22
+Traceroute6 result from P2 to fde4:9::22 :
+No connection from P2 to fde4:9::33
+Traceroute6 result from P2 to fde4:9::33 :
+No connection from P3 to fde4:9::1111
+Traceroute6 result from P3 to fde4:9::1111 :
+No connection from P3 to fde4:9::22
+Traceroute6 result from P3 to fde4:9::22 :
+No connection from P3 to fde4:9::33
+Traceroute6 result from P3 to fde4:9::33 :
+No connection from P11 to fde4:9::1111
+Traceroute6 result from P11 to fde4:9::1111 :
+No connection from P11 to fde4:9::22
+Traceroute6 result from P11 to fde4:9::22 :
+No connection from P11 to fde4:9::33
+Traceroute6 result from P11 to fde4:9::33 :
+No connection from P1 to fde4:9::1111
+Traceroute6 result from P1 to fde4:9::1111 :
+No connection from P1 to fde4:9::22
+Traceroute6 result from P1 to fde4:9::22 :
+No connection from P1 to fde4:9::33
+Traceroute6 result from P1 to fde4:9::33 :
+No connection from P2 to fde4:9::1111
+Traceroute6 result from P2 to fde4:9::1111 :
+No connection from P2 to fde4:9::22
+Traceroute6 result from P2 to fde4:9::22 :
+No connection from P2 to fde4:9::33
+Traceroute6 result from P2 to fde4:9::33 :
+No connection from P3 to fde4:9::1111
+Traceroute6 result from P3 to fde4:9::1111 :
+No connection from P3 to fde4:9::22
+Traceroute6 result from P3 to fde4:9::22 :
+No connection from P3 to fde4:9::33
+Traceroute6 result from P3 to fde4:9::33 :
+No connection from P11 to fde4:9::1111
+Traceroute6 result from P11 to fde4:9::1111 :
+No connection from P11 to fde4:9::22
+Traceroute6 result from P11 to fde4:9::22 :
+No connection from P11 to fde4:9::33
+Traceroute6 result from P11 to fde4:9::33 :
+No connection from P1 to fde4:9::1111
+Traceroute6 result from P1 to fde4:9::1111 :
+No connection from P1 to fde4:9::22
+Traceroute6 result from P1 to fde4:9::22 :
+No connection from P1 to fde4:9::33
+Traceroute6 result from P1 to fde4:9::33 :
+No connection from P2 to fde4:9::1111
+Traceroute6 result from P2 to fde4:9::1111 :
+No connection from P2 to fde4:9::22
+Traceroute6 result from P2 to fde4:9::22 :
+No connection from P2 to fde4:9::33
+Traceroute6 result from P2 to fde4:9::33 :
+No connection from P3 to fde4:9::1111
+Traceroute6 result from P3 to fde4:9::1111 :
+No connection from P3 to fde4:9::22
+Traceroute6 result from P3 to fde4:9::22 :
+No connection from P3 to fde4:9::33
+Traceroute6 result from P3 to fde4:9::33 :
+No connection from P11 to fde4:9::1111
+Traceroute6 result from P11 to fde4:9::1111 :
+No connection from P11 to fde4:9::22
+Traceroute6 result from P11 to fde4:9::22 :
+No connection from P11 to fde4:9::33
+Traceroute6 result from P11 to fde4:9::33 :
+No connection from P1 to fde4:9::1111
+Traceroute6 result from P1 to fde4:9::1111 :
+No connection from P1 to fde4:9::22
+Traceroute6 result from P1 to fde4:9::22 :
+No connection from P1 to fde4:9::33
+Traceroute6 result from P1 to fde4:9::33 :
+No connection from P2 to fde4:9::1111
+Traceroute6 result from P2 to fde4:9::1111 :
+No connection from P2 to fde4:9::22
+Traceroute6 result from P2 to fde4:9::22 :
+No connection from P2 to fde4:9::33
+Traceroute6 result from P2 to fde4:9::33 :
+No connection from P3 to fde4:9::1111
+Traceroute6 result from P3 to fde4:9::1111 :
+No connection from P3 to fde4:9::22
+Traceroute6 result from P3 to fde4:9::22 :
+No connection from P3 to fde4:9::33
+Traceroute6 result from P3 to fde4:9::33 :
+No connection from P11 to fde4:9::1111
+Traceroute6 result from P11 to fde4:9::1111 :
+No connection from P11 to fde4:9::22
+Traceroute6 result from P11 to fde4:9::22 :
+No connection from P11 to fde4:9::33
+Traceroute6 result from P11 to fde4:9::33 :
+No connection from P1 to fde4:9::1111
+Traceroute6 result from P1 to fde4:9::1111 :
+No connection from P1 to fde4:9::22
+Traceroute6 result from P1 to fde4:9::22 :
+No connection from P1 to fde4:9::33
+Traceroute6 result from P1 to fde4:9::33 :
+No connection from P2 to fde4:9::1111
+Traceroute6 result from P2 to fde4:9::1111 :
+No connection from P2 to fde4:9::22
+Traceroute6 result from P2 to fde4:9::22 :
+No connection from P2 to fde4:9::33
+Traceroute6 result from P2 to fde4:9::33 :
+No connection from P3 to fde4:9::1111
+Traceroute6 result from P3 to fde4:9::1111 :
+No connection from P3 to fde4:9::22
+Traceroute6 result from P3 to fde4:9::22 :
+No connection from P3 to fde4:9::33
+Traceroute6 result from P3 to fde4:9::33 :

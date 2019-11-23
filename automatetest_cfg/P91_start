@@ -1,0 +1,19 @@
+ldconfig
+#!/bin/bash
+
+
+ip link set dev lo up
+ip -6 addr add fde4:9:0000:9191/128 dev lo
+
+ip link set dev P91-eth0 up
+ip -6 addr add fde4:9:0000:9192::9191/64 dev P91-eth0
+
+
+
+# zebra is required to make the link between all FRRouting daemons
+# and the linux kernel routing table
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p91.api -i /tmp/p91_zebra.pid &
+# launching FRRouting OSPF daemon
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/p91_ospf.conf -z /tmp/p91.api -i /tmp/p91_ospf6d.pid -A 127.0.0.1
+#bgp
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/bgpd -f /etc/p91_bgp.conf -z /tmp/p91.api -i /tmp/p91_bgpd.pid -A 127.0.0.1

@@ -5,6 +5,7 @@
   "bgp_router_id": "1.1.1.1",
   "loopback_adress":"fde4:9:1111::9191",
   "router_as" : "65099",
+  "cluster_id" : " ",
   "neighbors": [
     {
       "interface": "fde4:9:1111::9292",
