@@ -17,7 +17,7 @@ neighbor ${neighbor['interface']} interface ${neighbor['our_interface']}
 neighbor ${neighbor['interface']} ttl-security hops ${neighbor['security_hop']}
 %endif
 %if neighbor['MD5_pass']!=' ':
-neighbor ${neighbor['interface']} password pass9 ${neighbor['MD5_pass']}
+neighbor ${neighbor['interface']} password ${neighbor['MD5_pass']}
 %endif
 %endfor
 
