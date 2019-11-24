@@ -40,3 +40,8 @@ ip6tables -A FORWARD -p tcp --sport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --sport 179 -j ACCEPT
 
+
+#If no respect BPC38 from other as 
+ip6tables -A INPUT -i king4 -s fde4:9::/32 -j DROP
+
+

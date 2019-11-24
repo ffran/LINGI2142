@@ -1,5 +1,5 @@
 #!/bin/bash
-#firewall for router P5-Firewall
+#firewall for router P4-Firewall
 #flush older table
 ip6tables -F INPUT
 ip6tables -F OUTPUT
@@ -11,7 +11,8 @@ ip6tables -P INPUT DROP
 ip6tables -P FORWARD DROP
 ip6tables -P OUTPUT DROP
 
-ip6tables -A INPUT --src fd00:200:2::/52 -j ACCEPT
+ip6tables -A INPUT -i P4-eth3 -s fde4:1::/32 -j ACCEPT
+
 
 #allow local
 ip6tables -A INPUT -i lo -j ACCEPT
@@ -41,6 +42,7 @@ ip6tables -A FORWARD -p tcp --dport 179 -j ACCEPT
 ip6tables -A FORWARD -p tcp --sport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --sport 179 -j ACCEPT
+
 
 
 

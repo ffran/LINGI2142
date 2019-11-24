@@ -1,0 +1,7 @@
+{
+    "name" : "P10-Firewall" ,
+    "icmp-flood-match limit" : 20,
+    "ebgp" : [{"interface" : "king2" }],
+    "prefix-interface" : []
+
+}

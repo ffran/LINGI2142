@@ -40,3 +40,6 @@ ip6tables -A FORWARD -p tcp --sport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --sport 179 -j ACCEPT
 
+
+
+

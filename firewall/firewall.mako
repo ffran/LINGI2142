@@ -40,3 +40,10 @@ ip6tables -A FORWARD -p tcp --sport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --dport 179 -j ACCEPT
 ip6tables -A OUTPUT -p tcp --sport 179 -j ACCEPT
 
+
+%for neighbor in data['ebgp']:
+#If no respect BPC38 from other as 
+ip6tables -A INPUT -i ${neighbor['interface']} -s fde4:9::/32 -j DROP
+%endfor
+
+
