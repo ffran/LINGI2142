@@ -13,7 +13,7 @@ ip link set dev P5-eth2 up
 ip -6 addr add fde4:9:0000:510::55/64 dev P5-eth2
 
 ip link set dev client_1-2 up
-ip -6 addr add fde4:9::c1c1:face dev client_1-2
+ip -6 addr add fde4:9::c1c1:face/64 dev name
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table

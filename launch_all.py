@@ -8,12 +8,11 @@ import shutil
 
 
 
-#TODO : gerer les cas ou le numero du routeur est > 9 (passage en hexadecimal) + automatiser create_network
 def main():
 	folder = "automatetest_cfg/"
 	router = [("P1",1),("P2",2),("P3",3),("P4",4),("P5",5),("P6",6),("P7",7),("P8",8),("P9",9),("P10",10),("P11",11),("P91",91),("P92",92)]
 	bgpLinks = [("P1", "P2", 2, 1),("P2", "P3", 3, 2),("P1","P9",9,1),("P1","P11",11,1),("P9","P11",11,9),("P1","P3",3,1),("P3","P9",9,3),("P9","P10",10,9),("P10","P11",11,10),("P3","P4",4,3),("P4","P10",10,4),("P2","P5",5,2),("P5","P10",10,5)]
-	bgpInterfaces = [("P1","king4","fde4:9::8:caf9/64")("P3","king3","fde4:9::1:caf9/64"),("P4","client_1-1","fde4:9::c1:face/64"),("P5","client_1-2","fde4:9::c1c1:face/64"),("P10","king2","fde4::6:cafe/64"),("P11","king","fde4::9:cafe/64"),("P91","bgp1","fde4:9::c1:caf9/64"),("P92","bgp2","fde4:9::c1c1:caf9/64")]
+	bgpInterfaces = [("P1","king4","fde4:9::8:caf9/64"),("P3","king3","fde4:9::1:caf9/64"),("P4","client_1-1","fde4:9::c1:face/64"),("P5","client_1-2","fde4:9::c1c1:face/64"),("P10","king2","fde4::6:cafe/64"),("P11","king","fde4::9:cafe/64"),("P91","bgp1","fde4:9::c1:caf9/64"),("P92","bgp2","fde4:9::c1c1:caf9/64")]
 	cluster1 = ["P1","P11","P9"]
 	cluster2 = ["P10","P3","P2"] 
 	router_as_65099 = ["P91","P92"]

@@ -9,7 +9,7 @@ ip link set dev P92-eth0 up
 ip -6 addr add fde4:9:1111:9192::9292/64 dev P92-eth0
 
 ip link set dev bgp2 up
-ip -6 addr add fde4:9::c1c1:caf9 dev bgp2
+ip -6 addr add fde4:9::c1c1:caf9/64 dev name
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table

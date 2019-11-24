@@ -15,7 +15,6 @@ ip link set dev P2-eth3 up
 ip -6 addr add fde4:9:0000:29::22/64 dev P2-eth3
 
 
-
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
 LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p2.api -i /tmp/p2_zebra.pid &
