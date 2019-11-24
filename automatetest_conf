@@ -41,7 +41,6 @@ function mk_topo {
     # <node name>-eth<count>, where count starts at 0 and is increased by 1
     # after each new interface
     # e.g. P1-eth0 links to P2-eth0
-#    add_link P1 P2
      add_link P1 P3
      add_link P1 P2
      add_link P2 P3
@@ -57,17 +56,14 @@ function mk_topo {
      add_link P10 P11
      add_link P91 P92
 
-     #test subnet
-     add_link P4 P91
-     add_link P5 P92
 
      bridge_node P11 eth3 king
 #     bridge_node P10 eth4 king2
      bridge_node P3 eth5 king3
      bridge_node P1 eth6 king4
-     #bridge_node P91 eth1 bgp1
-     #bridge_node P4 eth4 client_1-1
-     #bridge_node P92 eth1 bgp2
-     #bridge_node P5 eth3 client_1-2
+     bridge_node P91 eth1 bgp1
+     bridge_node P4 eth1 client_1-1
+     bridge_node P92 eth2 bgp2
+     bridge_node P5 eth2 client_1-2
 
 }

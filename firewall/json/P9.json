@@ -1,5 +1,8 @@
+
 {
     "name" : "P9-Firewall" ,
-    "icmp-flood-match limit" : 20
+    "icmp-flood-match limit" : 20 ,
+    "ebgp" : [],
+    "prefix-interface" : []
 
 }

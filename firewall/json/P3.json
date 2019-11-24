@@ -1,5 +1,7 @@
 {
     "name" : "P3-Firewall" ,
-    "icmp-flood-match limit" : 20
+    "icmp-flood-match limit" : 20,
+    "ebgp" : [{"interface" : "king3" }],
+    "prefix-interface" : []
 
 }
