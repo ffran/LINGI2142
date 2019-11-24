@@ -9,6 +9,7 @@ for r in ${routers[@]}; do
   show bgp summary json
 EOF
 done
+sudo python3 testFileAnalyse.py
 }
 myfunc >> essai.txt
 
