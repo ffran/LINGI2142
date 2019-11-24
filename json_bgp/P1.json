@@ -39,12 +39,13 @@
     ],
 
     "ebgp_neighbor" :[
-	{
-          "remote_as": "65008",
-          "interface":"fde4:9::8:beef",
-          "our_interface" : "king4",
-          "security_hop": " "
-        }
+      {
+        "remote_as": "65008",
+        "interface":"fde4:9::8:beef",
+        "our_interface" : "king4",
+        "security_hop": " "
+      }
+
     ],
     "access-list" : [
       {
@@ -53,5 +54,13 @@
         "prefix" : "any"
 
       }
+    ],
+    "access-path" : [
+      {
+        "name" : "as-authorized",
+        "type" :"transit",
+        "as": "65008"
+      }
+
     ]
   }

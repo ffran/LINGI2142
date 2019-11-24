@@ -23,7 +23,10 @@
       "remote_as": "65009",
       "interface":"fde4:9::c1c1:face",
       "our_interface" : "bgp2",
-      "security_hop": " "
+      "security_hop": " ,
+      "access-list_in":" ",
+      "access-list_out":" ",
+      "as-path-list" : " "
 
   }
 
@@ -35,5 +38,6 @@
       "prefix" : "any"
 
     }
-  ]
+  ],
+    "access-path" : [ ]
 }

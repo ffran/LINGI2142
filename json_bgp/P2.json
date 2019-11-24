@@ -51,7 +51,8 @@
         "prefix" : "any"
 
       }
-    ]
+    ],
+    "access-path" : [ ]
 
 
   }

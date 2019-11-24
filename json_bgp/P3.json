@@ -37,7 +37,10 @@
       "remote_as": "65001",
       "interface":"fde4:9::1:face",
       "our_interface" : "king3",
-      "security_hop": " "
+      "security_hop": " ",
+      "access-list_in":" ",
+      "access-list_out":" ",
+      "as-path-list" : "as-authorized"
 
   }
 
@@ -49,5 +52,13 @@
       "prefix" : "any"
 
     }
+  ],
+  "access-path" : [
+    {
+      "name" : "as-authorized",
+      "type" :"transit",
+      "as": "65001"
+    }
+
   ]
 }

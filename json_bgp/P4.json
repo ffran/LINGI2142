@@ -25,12 +25,6 @@
     ],
   
     "ebgp_neighbor" :[
-	{
-	  "remote_as":"65099",
-	  "interface":"fde4:9::c1:caf9",
-	  "our_interface":"client_1-1",
-	  "security_hop": " "
-	}
   
     ],
     "access-list" : [
@@ -40,5 +34,6 @@
         "prefix" : "any"
   
       }
-    ]
+    ],
+    "access-path" : [ ]
   }
