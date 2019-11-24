@@ -25,6 +25,7 @@
       "our_interface" : "bgp2",
       "security_hop": " ",
       "access-list_in":" ",
+      "MD5_pass": " ",
       "access-list_out":" ",
       "as-path-list" : " "
 

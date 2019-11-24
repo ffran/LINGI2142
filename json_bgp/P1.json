@@ -43,7 +43,11 @@
         "remote_as": "65008",
         "interface":"fde4:9::8:beef",
         "our_interface" : "king4",
-        "security_hop": " "
+        "security_hop": " ",
+        "access-list_in":" ",
+        "access-list_out":" ",
+        "MD5_pass": " ",
+        "as-path-list" : " "
       }
 
     ],

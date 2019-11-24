@@ -38,6 +38,7 @@
             "security_hop": " ",
             "access-list_in":" ",
             "access-list_out":" ",
+            "MD5_pass": " ",
             "as-path-list" : "as-authorized"
 
         }
