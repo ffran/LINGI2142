@@ -10,7 +10,10 @@ ip link set dev ${data['hostname']}-${link['name']} up
 ip -6 addr add ${link['adress']} dev ${data['hostname']}-${link['name']}
 %endfor 
 
-
+%for link in data['bgpInterface']:
+ip link set dev ${link['name']} up
+ip -6 addr add ${link['adress']} dev ${'name'}
+%endfor
 
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
