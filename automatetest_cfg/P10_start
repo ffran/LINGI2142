@@ -1,0 +1,26 @@
+ldconfig
+#!/bin/bash
+
+
+ip link set dev lo up
+ip -6 addr add fde4:9:0000::1010/128 dev lo
+
+ip link set dev P10-eth0 up
+ip -6 addr add fde4:9:0000:410::1010/64 dev P10-eth0
+ip link set dev P10-eth1 up
+ip -6 addr add fde4:9:0000:910::1010/64 dev P10-eth1
+ip link set dev P10-eth2 up
+ip -6 addr add fde4:9:0000:510::1010/64 dev P10-eth2
+ip link set dev P10-eth3 up
+ip -6 addr add fde4:9:0000:1011::1010/64 dev P10-eth3
+
+ip link set dev king2 up
+ip -6 addr add fde4::6:cafe/64 dev king2
+
+# zebra is required to make the link between all FRRouting daemons
+# and the linux kernel routing table
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p10.api -i /tmp/p10_zebra.pid &
+# launching FRRouting OSPF daemon
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/ospf6d -f /etc/p10_ospf.conf -z /tmp/p10.api -i /tmp/p10_ospf6d.pid -A 127.0.0.1 &
+#bgp
+LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/bgpd -f /etc/p10_bgp.conf -z /tmp/p10.api -i /tmp/p10_bgpd.pid -A 127.0.0.1
