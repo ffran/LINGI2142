@@ -2,7 +2,8 @@
 adress=(fde4:9::1111 fde4:9::22 fde4:9::33)
 routers=(P11 P1 P2 P3)
 number=$RANDOM
-sudo ip netns exec P11 sudo ip link set eth0 down
+randomRouter=${routers[$RANDOM % ${#routers[@]} ]}
+sudo ip netns exec $randomRouter sudo ip link set lo down
 for r in ${routers[@]};
 do
 for t in ${adress[@]}; 
@@ -17,7 +18,7 @@ echo "Valid connection from ${r} to ${t}" >> Rapport_Test_OSPF.txt
 fi  
 done
 done
-
+sudo ip netns exec $randomRouter sudo ip link set lo up
 #sudo ./connect_to.sh automatetest_cfg P1 && 
 #ping6 fde4:9::1111 -c5  > /dev/null
 
