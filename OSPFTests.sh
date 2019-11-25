@@ -1,6 +1,7 @@
 #!/bin/bash
 adress=(fde4:9::1111 fde4:9::22 fde4:9::33 fde4:9::11 fde4:9::33 fde4:9::44 fde4:9::55 fde4:9::99 fde4:9:1111::9191 fde4:9:1111::9292 fde4:9::1111 fde4:9::1010)
 routers=(P1 P2 P3 P4 P5 P9 P91 P92 P10 P11)
+sudo rm Rapport_Test_OSPF.txt
 for r in ${routers[@]};
 do
 for t in ${adress[@]}; 

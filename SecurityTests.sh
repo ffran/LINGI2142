@@ -15,4 +15,4 @@ echo "Firewall non fonctionnel, attaque non contrée ..." >> Rapport_Securite_Te
 fi   
 done
 done
-
+sudo rm Rapport_Securite_Test
