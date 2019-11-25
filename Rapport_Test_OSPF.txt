@@ -1,2 +1,0 @@
-No connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
