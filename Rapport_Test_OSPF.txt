@@ -1,241 +1,338 @@
-No connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-No connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-No connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-No connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-No connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-No connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-No connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-No connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
+Valid connection from P1 to fde4:9::1111
+Valid connection from P1 to fde4:9::22
+Valid connection from P1 to fde4:9::33
+Valid connection from P1 to fde4:9::11
+Valid connection from P1 to fde4:9::33
+Valid connection from P1 to fde4:9::44
+Valid connection from P1 to fde4:9::55
+Valid connection from P1 to fde4:9::99
+Valid connection from P1 to fde4:9:1111::9191
+Valid connection from P1 to fde4:9:1111::9292
+Valid connection from P1 to fde4:9::1111
+Valid connection from P1 to fde4:9::1010
+Valid connection from P2 to fde4:9::1111
+Valid connection from P2 to fde4:9::22
 No connection from P2 to fde4:9::33
 Traceroute6 result from P2 to fde4:9::33 :
-No connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-No connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-No connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-No connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-No connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-No connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-No connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-No connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-No connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-No connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-No connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-No connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-No connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-No connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-No connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-No connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-No connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-No connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-No connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-No connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-No connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-No connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-No connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-No connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-No connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-No connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-No connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-No connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-No connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-No connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-No connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-No connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-No connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-No connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-No connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-No connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-No connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-No connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-No connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-No connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-No connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-No connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-No connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-No connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-No connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-No connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-No connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-No connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-No connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-No connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-No connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-No connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-No connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-No connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::1111
-Traceroute6 result from P11 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::22
-Traceroute6 result from P11 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P11 to fde4:9::33
-Traceroute6 result from P11 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::1111
-Traceroute6 result from P1 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::22
-Traceroute6 result from P1 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P1 to fde4:9::33
-Traceroute6 result from P1 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::1111
-Traceroute6 result from P2 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::22
-Traceroute6 result from P2 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P2 to fde4:9::33
-Traceroute6 result from P2 to fde4:9::33 :
-traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::1111
-Traceroute6 result from P3 to fde4:9::1111 :
-traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::22
-Traceroute6 result from P3 to fde4:9::22 :
-traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packetsNo connection from P3 to fde4:9::33
-Traceroute6 result from P3 to fde4:9::33 :
 traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packets
+ 1  fde4:9::33 (fde4:9::33)  0.327 ms  0.034 ms  0.024 ms
+Valid connection from P2 to fde4:9::11
+Valid connection from P2 to fde4:9::33
+Valid connection from P2 to fde4:9::44
+Valid connection from P2 to fde4:9::55
+Valid connection from P2 to fde4:9::99
+Valid connection from P2 to fde4:9:1111::9191
+Valid connection from P2 to fde4:9:1111::9292
+Valid connection from P2 to fde4:9::1111
+Valid connection from P2 to fde4:9::1010
+Valid connection from P3 to fde4:9::1111
+No connection from P3 to fde4:9::22
+Traceroute6 result from P3 to fde4:9::22 :
+traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packets
+ 1  fde4:9::22 (fde4:9::22)  0.363 ms * *
+Valid connection from P3 to fde4:9::33
+Valid connection from P3 to fde4:9::11
+Valid connection from P3 to fde4:9::33
+Valid connection from P3 to fde4:9::44
+No connection from P3 to fde4:9::55
+Traceroute6 result from P3 to fde4:9::55 :
+traceroute to fde4:9::55 (fde4:9::55), 30 hops max, 80 byte packets
+ 1  fde4:9:0:23::22 (fde4:9:0:23::22)  0.190 ms * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *Valid connection from P3 to fde4:9::99
+Valid connection from P3 to fde4:9:1111::9191
+Valid connection from P3 to fde4:9:1111::9292
+Valid connection from P3 to fde4:9::1111
+Valid connection from P3 to fde4:9::1010
+Valid connection from P4 to fde4:9::1111
+Valid connection from P4 to fde4:9::22
+Valid connection from P4 to fde4:9::33
+Valid connection from P4 to fde4:9::11
+Valid connection from P4 to fde4:9::33
+Valid connection from P4 to fde4:9::44
+Valid connection from P4 to fde4:9::55
+Valid connection from P4 to fde4:9::99
+Valid connection from P4 to fde4:9:1111::9191
+No connection from P4 to fde4:9:1111::9292
+Traceroute6 result from P4 to fde4:9:1111::9292 :
+traceroute to fde4:9:1111::9292 (fde4:9:1111::9292), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  0.223 ms  0.071 ms *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  fde4:9:1111::9292 (fde4:9:1111::9292)  1.966 ms * *
+Valid connection from P4 to fde4:9::1111
+No connection from P4 to fde4:9::1010
+Traceroute6 result from P4 to fde4:9::1010 :
+traceroute to fde4:9::1010 (fde4:9::1010), 30 hops max, 80 byte packets
+ 1  fde4:9::1010 (fde4:9::1010)  0.161 ms  0.027 ms  0.024 ms
+Valid connection from P5 to fde4:9::1111
+Valid connection from P5 to fde4:9::22
+Valid connection from P5 to fde4:9::33
+Valid connection from P5 to fde4:9::11
+Valid connection from P5 to fde4:9::33
+Valid connection from P5 to fde4:9::44
+Valid connection from P5 to fde4:9::55
+Valid connection from P5 to fde4:9::99
+Valid connection from P5 to fde4:9:1111::9191
+Valid connection from P5 to fde4:9:1111::9292
+Valid connection from P5 to fde4:9::1111
+Valid connection from P5 to fde4:9::1010
+Valid connection from P9 to fde4:9::1111
+Valid connection from P9 to fde4:9::22
+Valid connection from P9 to fde4:9::33
+Valid connection from P9 to fde4:9::11
+Valid connection from P9 to fde4:9::33
+Valid connection from P9 to fde4:9::44
+Valid connection from P9 to fde4:9::55
+Valid connection from P9 to fde4:9::99
+Valid connection from P9 to fde4:9:1111::9191
+Valid connection from P9 to fde4:9:1111::9292
+Valid connection from P9 to fde4:9::1111
+Valid connection from P9 to fde4:9::1010
+No connection from P91 to fde4:9::1111
+Traceroute6 result from P91 to fde4:9::1111 :
+traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  3021.220 ms !H  3017.737 ms !H  3017.680 ms !H
+No connection from P91 to fde4:9::22
+Traceroute6 result from P91 to fde4:9::22 :
+traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2996.459 ms !H  2994.330 ms !H  2994.311 ms !H
+No connection from P91 to fde4:9::33
+Traceroute6 result from P91 to fde4:9::33 :
+traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2999.434 ms !H  2997.242 ms !H  2997.047 ms !H
+No connection from P91 to fde4:9::11
+Traceroute6 result from P91 to fde4:9::11 :
+traceroute to fde4:9::11 (fde4:9::11), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  3002.356 ms !H  2999.125 ms !H  2999.099 ms !H
+No connection from P91 to fde4:9::33
+Traceroute6 result from P91 to fde4:9::33 :
+traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2996.802 ms !H  2994.553 ms !H  2994.530 ms !H
+No connection from P91 to fde4:9::44
+Traceroute6 result from P91 to fde4:9::44 :
+traceroute to fde4:9::44 (fde4:9::44), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2997.289 ms !H  2996.098 ms !H  2996.056 ms !H
+No connection from P91 to fde4:9::55
+Traceroute6 result from P91 to fde4:9::55 :
+traceroute to fde4:9::55 (fde4:9::55), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2998.114 ms !H  2995.258 ms !H  2995.231 ms !H
+No connection from P91 to fde4:9::99
+Traceroute6 result from P91 to fde4:9::99 :
+traceroute to fde4:9::99 (fde4:9::99), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2996.718 ms !H  2994.847 ms !H  2994.844 ms !H
+Valid connection from P91 to fde4:9:1111::9191
+Valid connection from P91 to fde4:9:1111::9292
+No connection from P91 to fde4:9::1111
+Traceroute6 result from P91 to fde4:9::1111 :
+traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  2998.116 ms !H  2996.128 ms !H  2996.124 ms !H
+No connection from P91 to fde4:9::1010
+Traceroute6 result from P91 to fde4:9::1010 :
+traceroute to fde4:9::1010 (fde4:9::1010), 30 hops max, 80 byte packets
+ 1  fde4:9::c1:caf9 (fde4:9::c1:caf9)  3006.520 ms !H  3004.822 ms !H  3004.813 ms !H
+No connection from P92 to fde4:9::1111
+Traceroute6 result from P92 to fde4:9::1111 :
+traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  3000.018 ms !H  2998.416 ms !H  2998.369 ms !H
+No connection from P92 to fde4:9::22
+Traceroute6 result from P92 to fde4:9::22 :
+traceroute to fde4:9::22 (fde4:9::22), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2999.312 ms !H  2997.467 ms !H  2997.443 ms !H
+No connection from P92 to fde4:9::33
+Traceroute6 result from P92 to fde4:9::33 :
+traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  3082.899 ms !H  3081.233 ms !H  3081.180 ms !H
+No connection from P92 to fde4:9::11
+Traceroute6 result from P92 to fde4:9::11 :
+traceroute to fde4:9::11 (fde4:9::11), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  3000.222 ms !H  2997.582 ms !H  2997.528 ms !H
+No connection from P92 to fde4:9::33
+Traceroute6 result from P92 to fde4:9::33 :
+traceroute to fde4:9::33 (fde4:9::33), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2999.362 ms !H  2997.177 ms !H  2997.129 ms !H
+No connection from P92 to fde4:9::44
+Traceroute6 result from P92 to fde4:9::44 :
+traceroute to fde4:9::44 (fde4:9::44), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2997.271 ms !H  2996.439 ms !H  2996.433 ms !H
+No connection from P92 to fde4:9::55
+Traceroute6 result from P92 to fde4:9::55 :
+traceroute to fde4:9::55 (fde4:9::55), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2996.964 ms !H  2995.011 ms !H  2994.974 ms !H
+No connection from P92 to fde4:9::99
+Traceroute6 result from P92 to fde4:9::99 :
+traceroute to fde4:9::99 (fde4:9::99), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2996.528 ms !H  2993.886 ms !H  2993.816 ms !H
+Valid connection from P92 to fde4:9:1111::9191
+Valid connection from P92 to fde4:9:1111::9292
+No connection from P92 to fde4:9::1111
+Traceroute6 result from P92 to fde4:9::1111 :
+traceroute to fde4:9::1111 (fde4:9::1111), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2996.836 ms !H  2994.207 ms !H  2994.147 ms !H
+No connection from P92 to fde4:9::1010
+Traceroute6 result from P92 to fde4:9::1010 :
+traceroute to fde4:9::1010 (fde4:9::1010), 30 hops max, 80 byte packets
+ 1  fde4:9::c1c1:caf9 (fde4:9::c1c1:caf9)  2996.371 ms !H  2993.968 ms !H  2993.961 ms !H
+Valid connection from P10 to fde4:9::1111
+Valid connection from P10 to fde4:9::22
+Valid connection from P10 to fde4:9::33
+Valid connection from P10 to fde4:9::11
+Valid connection from P10 to fde4:9::33
+Valid connection from P10 to fde4:9::44
+Valid connection from P10 to fde4:9::55
+Valid connection from P10 to fde4:9::99
+No connection from P10 to fde4:9:1111::9191
+Traceroute6 result from P10 to fde4:9:1111::9191 :
+traceroute to fde4:9:1111::9191 (fde4:9:1111::9191), 30 hops max, 80 byte packets
+ 1  fde4:9:0:1011::1111 (fde4:9:0:1011::1111)  0.115 ms  0.047 ms  0.033 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+No connection from P10 to fde4:9:1111::9292
+Traceroute6 result from P10 to fde4:9:1111::9292 :
+traceroute to fde4:9:1111::9292 (fde4:9:1111::9292), 30 hops max, 80 byte packets
+ 1  fde4:9:0:1011::1111 (fde4:9:0:1011::1111)  0.376 ms  0.060 ms  0.038 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+Valid connection from P10 to fde4:9::1111
+Valid connection from P10 to fde4:9::1010
+Valid connection from P11 to fde4:9::1111
+Valid connection from P11 to fde4:9::22
+Valid connection from P11 to fde4:9::33
+Valid connection from P11 to fde4:9::11
+Valid connection from P11 to fde4:9::33
+Valid connection from P11 to fde4:9::44
+Valid connection from P11 to fde4:9::55
+Valid connection from P11 to fde4:9::99
+No connection from P11 to fde4:9:1111::9191
+Traceroute6 result from P11 to fde4:9:1111::9191 :
+traceroute to fde4:9:1111::9191 (fde4:9:1111::9191), 30 hops max, 80 byte packets
+ 1  * * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+No connection from P11 to fde4:9:1111::9292
+Traceroute6 result from P11 to fde4:9:1111::9292 :
+traceroute to fde4:9:1111::9292 (fde4:9:1111::9292), 30 hops max, 80 byte packets
+ 1  * * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+Valid connection from P11 to fde4:9::1111
+Valid connection from P11 to fde4:9::1010

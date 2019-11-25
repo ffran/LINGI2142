@@ -33,7 +33,7 @@
     "ebgp_neighbor" :[
         {
             "remote_as": "65006",
-            "interface":" fde4::6:beef",
+            "interface":" fde4:6::9:beef",
             "our_interface" : "king2",
             "security_hop": " ",
             "access-list_in":" ",

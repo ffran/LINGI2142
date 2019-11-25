@@ -58,12 +58,12 @@ function mk_topo {
 
 
      bridge_node P11 eth3 king
-#     bridge_node P10 eth4 king2
+     bridge_node P10 eth4 king2
      bridge_node P3 eth5 king3
      bridge_node P1 eth6 king4
      bridge_node P91 eth1 bgp1
-     bridge_node P4 eth1 client_1-1
-     bridge_node P92 eth2 bgp2
-     bridge_node P5 eth2 client_1-2
+     bridge_node P4 eth2 client_1-1
+#     bridge_node P92 eth2 bgp2
+#     bridge_node P5 eth2 client_1-2
 
 }
