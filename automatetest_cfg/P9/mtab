@@ -4,9 +4,3 @@
 /home/vagrant/Group9/LINGI2142/automatetest_cfg/templates /templates none rw,bind 0 0
 /home/vagrant/Group9/LINGI2142/automatetest_cfg/puppetmodules /puppetmodules none rw,bind 0 0
 /run/P9 /run none rw,bind 0 0
-/home/vagrant/Group9/LINGI2142/automatetest_cfg/templates /templates none rw,bind 0 0
-/home/vagrant/Group9/LINGI2142/automatetest_cfg/puppetmodules /puppetmodules none rw,bind 0 0
-/run/P9 /run none rw,bind 0 0
-/home/vagrant/Group9/LINGI2142/automatetest_cfg/templates /templates none rw,bind 0 0
-/home/vagrant/Group9/LINGI2142/automatetest_cfg/puppetmodules /puppetmodules none rw,bind 0 0
-/run/P9 /run none rw,bind 0 0
