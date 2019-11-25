@@ -130,7 +130,7 @@ def main():
 		#	with open(("p"+str(r[1])+"_bgp.conf"),'w+') as f:
                 #       	f.write(template.render(data=data))
 		#	shutil.move("p"+str(r[1])+"_bgp.conf",folder+r[0])
-		with open(("P"+str(r[1])+".json"),'w') as f:
-			json.dumps(data,f)
+		#with open(("P"+str(r[1])+".json"),'w') as f:
+		#	json.dumps(data,f)
 main()
  
