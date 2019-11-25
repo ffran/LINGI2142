@@ -5,7 +5,7 @@ for r in ${routers[@]};
 do
 for t in ${adress[@]}; 
 do
-sudo ip netns exec $r ping6 $t -c25 > /dev/null
+sudo ip netns exec $r ping6 $t -c30 -f | grep 'loss' >> Rapport_Securite_Test
 if [ "${?}" -ne 0 ]; then
 echo "Firewall contre le flooding fonctionnel ! Attaque maitrisée ! ${r} to ${t}" >> Rapport_Securite_Test
 else

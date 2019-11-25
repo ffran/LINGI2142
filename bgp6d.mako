@@ -36,7 +36,10 @@ bgp cluster-id ${data['cluster_id']}
 !
 address-family ipv6 unicast
 !
-network fde4:9::/32
+
+%for net in data['network']:
+network ${net['address']}
+%endfor
 !
 %for neighbor in data['ebgp_neighbor']:
 neighbor ${neighbor['interface']} activate

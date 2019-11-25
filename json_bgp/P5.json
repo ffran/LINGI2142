@@ -35,6 +35,11 @@
         "as-path-list" : " "
       }
     ],
+    "network" : [
+        {
+          "address":"fde4:9::/32"
+        }
+    ],
     "access-list" : [
       {
         "name": "filter",

@@ -46,10 +46,15 @@
         "security_hop": " ",
         "access-list_in":" ",
         "access-list_out":" ",
-        "MD5_pass": " ",
+        "MD5_pass": "NETWORK0809",
         "as-path-list" : " "
       }
 
+    ],
+    "network" : [
+	{
+	  "address":"fde4:9::/32"
+	}
     ],
     "access-list" : [
       {

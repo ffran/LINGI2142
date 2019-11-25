@@ -32,6 +32,11 @@
   }
 
   ],
+  "network" : [
+      {
+        "address":"fde4:9:1111::/48"
+      }
+  ],
   "access-list" : [
     {
       "name": "filter",
