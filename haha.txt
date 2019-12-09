@@ -1,0 +1,440 @@
+group9#   show bgp summary json 
+{
+"ipv6Unicast":{
+  "routerId":"10.10.10.11",
+  "as":65009,
+  "vrfId":0,
+  "vrfName":"default",
+  "tableVersion":45,
+  "ribCount":15,
+  "ribMemory":2760,
+  "peerCount":4,
+  "peerMemory":83680,
+  "peers":{
+    "fde4::1":{
+      "hostname":"lingi2142TP",
+      "remoteAs":64512,
+      "version":4,
+      "msgRcvd":1327,
+      "msgSent":1327,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:46",
+      "peerUptimeMsec":76786000,
+      "peerUptimeEstablishedEpoch":1574356138,
+      "prefixReceivedCount":8,
+      "pfxRcd":8,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::11":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1343,
+      "msgSent":1326,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:43",
+      "peerUptimeMsec":76723000,
+      "peerUptimeEstablishedEpoch":1574356201,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::99":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1345,
+      "msgSent":1326,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:52",
+      "peerUptimeMsec":76732000,
+      "peerUptimeEstablishedEpoch":1574356192,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::1010":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1282,
+      "msgSent":1326,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:52",
+      "peerUptimeMsec":76732000,
+      "peerUptimeEstablishedEpoch":1574356192,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    }
+  },
+  "failedPeers":0,
+  "totalPeers":4,
+  "dynamicPeers":0,
+  "bestPath":{
+    "multiPathRelax":"false"
+  }
+}
+}
+group9# 
+
+Hello, this is FRRouting (version 7.2-lingi2142-g2abea60).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+This is a git build of 2abea60
+Associated branch(es):
+	local:stable/7.2
+	github/FRRouting/frr.git/stable/7.2
+
+group9#   show bgp summary json 
+{
+"ipv6Unicast":{
+  "routerId":"10.10.10.1",
+  "as":65009,
+  "vrfId":0,
+  "vrfName":"default",
+  "tableVersion":101,
+  "ribCount":16,
+  "ribMemory":2944,
+  "peerCount":4,
+  "peerMemory":83680,
+  "peers":{
+    "fde4:9::22":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1282,
+      "msgSent":1376,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:48",
+      "peerUptimeMsec":76728000,
+      "peerUptimeEstablishedEpoch":1574356197,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":10,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::33":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1350,
+      "msgSent":1376,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:48",
+      "peerUptimeMsec":76728000,
+      "peerUptimeEstablishedEpoch":1574356197,
+      "prefixReceivedCount":6,
+      "pfxRcd":6,
+      "pfxSnt":10,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::99":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1345,
+      "msgSent":1343,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:47",
+      "peerUptimeMsec":76727000,
+      "peerUptimeEstablishedEpoch":1574356198,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":6,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::1111":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1326,
+      "msgSent":1343,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:18:43",
+      "peerUptimeMsec":76723000,
+      "peerUptimeEstablishedEpoch":1574356202,
+      "prefixReceivedCount":9,
+      "pfxRcd":9,
+      "pfxSnt":6,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    }
+  },
+  "failedPeers":0,
+  "totalPeers":4,
+  "dynamicPeers":0,
+  "bestPath":{
+    "multiPathRelax":"false"
+  }
+}
+}
+group9# 
+
+Hello, this is FRRouting (version 7.2-lingi2142-g2abea60).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+This is a git build of 2abea60
+Associated branch(es):
+	local:stable/7.2
+	github/FRRouting/frr.git/stable/7.2
+
+group9#   show bgp summary json 
+{
+"ipv6Unicast":{
+  "routerId":"10.10.10.11",
+  "as":65009,
+  "vrfId":0,
+  "vrfName":"default",
+  "tableVersion":45,
+  "ribCount":15,
+  "ribMemory":2760,
+  "peerCount":4,
+  "peerMemory":83680,
+  "peers":{
+    "fde4::1":{
+      "hostname":"lingi2142TP",
+      "remoteAs":64512,
+      "version":4,
+      "msgRcvd":1328,
+      "msgSent":1328,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:20:26",
+      "peerUptimeMsec":76826000,
+      "peerUptimeEstablishedEpoch":1574356139,
+      "prefixReceivedCount":8,
+      "pfxRcd":8,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::11":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1344,
+      "msgSent":1327,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:23",
+      "peerUptimeMsec":76763000,
+      "peerUptimeEstablishedEpoch":1574356202,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::99":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1346,
+      "msgSent":1327,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:32",
+      "peerUptimeMsec":76772000,
+      "peerUptimeEstablishedEpoch":1574356193,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::1010":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1283,
+      "msgSent":1327,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:32",
+      "peerUptimeMsec":76772000,
+      "peerUptimeEstablishedEpoch":1574356193,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":9,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    }
+  },
+  "failedPeers":0,
+  "totalPeers":4,
+  "dynamicPeers":0,
+  "bestPath":{
+    "multiPathRelax":"false"
+  }
+}
+}
+group9# 
+
+Hello, this is FRRouting (version 7.2-lingi2142-g2abea60).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+This is a git build of 2abea60
+Associated branch(es):
+	local:stable/7.2
+	github/FRRouting/frr.git/stable/7.2
+
+group9#   show bgp summary json 
+{
+"ipv6Unicast":{
+  "routerId":"10.10.10.1",
+  "as":65009,
+  "vrfId":0,
+  "vrfName":"default",
+  "tableVersion":101,
+  "ribCount":16,
+  "ribMemory":2944,
+  "peerCount":4,
+  "peerMemory":83680,
+  "peers":{
+    "fde4:9::22":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1283,
+      "msgSent":1377,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:29",
+      "peerUptimeMsec":76769000,
+      "peerUptimeEstablishedEpoch":1574356196,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":10,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::33":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1351,
+      "msgSent":1377,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:29",
+      "peerUptimeMsec":76769000,
+      "peerUptimeEstablishedEpoch":1574356196,
+      "prefixReceivedCount":6,
+      "pfxRcd":6,
+      "pfxSnt":10,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::99":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1346,
+      "msgSent":1344,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:28",
+      "peerUptimeMsec":76768000,
+      "peerUptimeEstablishedEpoch":1574356197,
+      "prefixReceivedCount":1,
+      "pfxRcd":1,
+      "pfxSnt":6,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    },
+    "fde4:9::1111":{
+      "hostname":"bgpd",
+      "remoteAs":65009,
+      "version":4,
+      "msgRcvd":1327,
+      "msgSent":1344,
+      "tableVersion":0,
+      "outq":0,
+      "inq":0,
+      "peerUptime":"21:19:24",
+      "peerUptimeMsec":76764000,
+      "peerUptimeEstablishedEpoch":1574356201,
+      "prefixReceivedCount":9,
+      "pfxRcd":9,
+      "pfxSnt":6,
+      "state":"Established",
+      "connectionsEstablished":1,
+      "connectionsDropped":0,
+      "idType":"ipv6"
+    }
+  },
+  "failedPeers":0,
+  "totalPeers":4,
+  "dynamicPeers":0,
+  "bestPath":{
+    "multiPathRelax":"false"
+  }
+}
+}
+group9# 
+
