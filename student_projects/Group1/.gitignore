@@ -1,4 +1,0 @@
-.vagrant
-template/__pycache__/
-template/test/__pycache__/
-template/config_helpers/__pycache__/
