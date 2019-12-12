@@ -1,8 +1,10 @@
 #!/bin/bash
 sudo ./cleanup.sh
-cd automatetest_cfg/
-sudo rm -r *
-cd ..
+if [ -d "automatetest_cfg" ]; then
+	cd automatetest_cfg/
+	sudo rm -r *
+	cd ..
+fi
 #echo ${ls automatest_cfg}
 sudo ./create_network.sh automatetest_conf
 sudo ./cleanup.sh
