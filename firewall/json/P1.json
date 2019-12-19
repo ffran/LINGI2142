@@ -1,6 +1,7 @@
 {
     "name" : "P1-Firewall" ,
     "icmp-flood-match limit" : 20,
+    "traceroute-flood-match limit" : 20,
     "ebgp" : [{"interface" : "king4" }],
     "prefix-interface" : []
 

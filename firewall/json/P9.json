@@ -2,6 +2,7 @@
 {
     "name" : "P9-Firewall" ,
     "icmp-flood-match limit" : 20 ,
+    "traceroute-flood-match limit" : 20,
     "ebgp" : [],
     "prefix-interface" : []
 
