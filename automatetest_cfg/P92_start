@@ -11,6 +11,8 @@ ip -6 addr add fde4:9:1111:9192::9292/64 dev P92-eth0
 ip link set dev bgp2 up
 ip -6 addr add fde4:9::c1c1:caf9/64 dev bgp2
 
+firewall/P92.sh
+
 # zebra is required to make the link between all FRRouting daemons
 # and the linux kernel routing table
 LD_LIBRARY_PATH=/usr/local/lib /usr/lib/frr/zebra -A 127.0.0.1 -f /etc/zebra.conf -z /tmp/p92.api -i /tmp/p92_zebra.pid &
