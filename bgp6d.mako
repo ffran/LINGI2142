@@ -75,7 +75,8 @@ exit-address-family
 !Communities attributes
 %for com in data['community']:
 %if com['AS'] != data['router_as']:
-bgp community-list ${com['attr']} permit ${com['AS']:${com['attr']}}
+bgp community-list ${com['attr']} permit ${com['AS']}:${com['attr']}
+bgp community-list ${com['attr']} deny
 %endif
 %endfor
 !
