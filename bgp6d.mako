@@ -43,6 +43,16 @@ network ${net['address']}
 !
 %for neighbor in data['ebgp_neighbor']:
 neighbor ${neighbor['interface']} activate
+  %if community != ' ':
+    %for com in data['community']:
+      %if com['AS'] == neighbor['remote_as']:
+	neighbor ${neighbor['interface']} route-map RMAP in
+      %elif com['AS'] == data['router_as']:
+	neighbor ${neighbor['interface']} route-map RMAP out
+      %endif
+      <% break %>
+    %endfor
+  %endif
 %endfor
 
 %for neighbor in data['neighbors']:
@@ -61,6 +71,25 @@ neighbor ${neighbor['interface']} distribute-list ${neighbor['access-list_out']}
 %endfor
 exit-address-family
 !
+%if community != ' ':
+!Communities attributes
+%for com in data['community']:
+%if com['AS'] != data['router_as']:
+bgp community-list ${com['attr']} permit ${com['AS']:${com['attr']}}
+%endif
+%endfor
+!
+%for com in data['community']:
+%if com['AS'] == data['router_as']:
+route-map MAP permit ${com['nb']}
+  set community ${com['AS']}:${com['attr']}
+%else:
+route-map RMAP permit ${com['nb']}
+  match community ${com['attr']}
+  set local-preference ${com['attr']}
+%endif
+%endfor
+%endif
 
 %for access in data['access-list']:
 ipv6 access-list ${access['name']} ${access['type']} ${access['prefix']}

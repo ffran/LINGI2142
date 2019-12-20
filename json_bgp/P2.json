@@ -57,7 +57,8 @@
 
       }
     ],
-    "access-path" : [ ]
+    "access-path" : [ ],
+    "community" : [ ]
 
 
   }
